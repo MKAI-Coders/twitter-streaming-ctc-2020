@@ -36,13 +36,13 @@ th {
 	$conn = open_db();
 
 
-    $sql = "SELECT * FROM ctc_twitter2019 ORDER BY id DESC";
+    $sql = "SELECT * FROM tweet_capture ORDER BY id DESC";
 	//$sql = 'SELECT * FROM new_user ORDER BY tanggal DESC LIMIT 3';
 
     $retvaljml = $conn->query($sql);
 	$totaldata = $retvaljml->num_rows;
 	
-	$sql2 = "SELECT * FROM ctc_twitter2019 ORDER BY id DESC LIMIT 10";
+	$sql2 = "SELECT * FROM tweet_capture ORDER BY id DESC LIMIT 10";
 	$retval =  $conn->query($sql2);
 	
 	if ($totaldata > 0)
@@ -90,7 +90,7 @@ th {
 	echo "<br>";
 	echo "<br>";
 	
-	$sql = "SELECT name, screen_name, count(*) as jml FROM ctc_twitter2019 GROUP BY screen_name ORDER BY jml DESC limit 10;";
+	$sql = "SELECT name, screen_name, count(*) as jml FROM tweet_capture GROUP BY screen_name ORDER BY jml DESC limit 10;";
 	
 	//$sql = 'SELECT * FROM new_user ORDER BY tanggal DESC LIMIT 3';
 
