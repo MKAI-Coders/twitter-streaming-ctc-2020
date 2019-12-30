@@ -1,6 +1,10 @@
 <html>
 <head>
 <style>
+* {
+ font-family: Arial;
+}
+
 tr:hover {background-color: #f5f5f5;}
 td {
     border-bottom: 1px solid #ddd;
@@ -31,7 +35,7 @@ th {
 	if ($totaldata > 0)
 	{
 		 echo "<p><h2>Rangking Akun Tweet Terbanyak</p></h2>";
-		 echo "<p><h3>Keyword : #awalidengankebersihan, #cleanthecity, #cleanthecity2019 </p></h3>";
+		 echo "<p><h3>Keyword : #awalidengankebersihan, #cleanthecity, #cleanthecity2020 </p></h3>";
 		 //echo "Jumlah tweet : ".$totaldata;
 
 		 echo "<table><tr><th>No</th><th>ID Name<th>Jumlah Tweet</th></tr>";

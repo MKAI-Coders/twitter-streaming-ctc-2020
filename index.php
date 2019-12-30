@@ -47,10 +47,10 @@ th {
 	
 	if ($totaldata > 0)
 	{
-		 echo "<img src='img/AjakanCTC.png' alt='Clean The City 2019' width='400' height='100'>";
+		 //echo "<img src='img/AjakanCTC.png' alt='Clean The City 2019' width='400' height='100'>";
 		 
 		 //echo "<p><h1>Real Time Monitoring Kegiatan Clean The City 2019</p></h1>";
-		 echo "<p><h1>Pemantauan Twitter</p></h1>";
+		 echo "<p><h1>Pemantauan Twitter Kegiatan Clean The City 2020</p></h1>";
 		
 		 echo "<p>Keyword : #awalidengankebersihan, #cleanthecity, #cleanthecity2020 </p>";
 		 echo "<b> 10 tweet terupdate </b></br>";
@@ -120,7 +120,7 @@ th {
 	echo "<p>Ingin melihat semua akun? Silahkan klik link ini <a href='rank.php'>semua akun</a></p>";
 	echo "</br>";
 	echo "</br><hr>";
-	echo "<img src='img/LOGO-MKAI.png' alt='MKAI' width='200' height='50'>";
+	echo "<img src='img/LOGO-FINAL MKAI.png' alt='MKAI' height='50'>";
 	//echo "<p><h2>Dipersembahkan Oleh Majelis Khuddamul Ahmadiyah Indonesia</p></h2>";
 	//echo "<br>";
 	echo "<br>";

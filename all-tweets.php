@@ -1,6 +1,10 @@
 <html>
 <head>
 <style>
+* {
+ font-family: Arial;
+}
+
 tr:hover {background-color: #f5f5f5;}
 td {
     border-bottom: 1px solid #ddd;
@@ -40,11 +44,11 @@ th {
 	
 	if ($retval->num_rows > 0)
 	{
-		 echo "<p><h2>Pemantauan Twitter</p></h2>";
+		 echo "<p><h2>Pemantauan Twitter Kegiatan Clean The City 2020</p></h2>";
 		
 		 echo "<p><h3>Keyword : #awalidengankebersihan, #cleanthecity, #cleanthecity2020 </p></h3>";
 		 echo "<b> All tweets</b></br>";
-		 echo ("Jumlah tweet sampai saat ini (sejak 29/12/2017) : ".$totaldata."</br>");
+		 echo ("Jumlah tweet sampai saat ini (sejak 30/12/2019) : ".$totaldata."</br>");
 
 		 echo "</br></br><table><tr><th>No</th><th>Created<th>ID name</th><th>Status count</th><th>Following</th><th>Follower</th><th>Text</th><th>Location</th></tr>";
 		 $i = 1;
