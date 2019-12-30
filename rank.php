@@ -23,9 +23,8 @@ th {
 	
 	$conn = open_db();
    
-    $sql = "SELECT name, screen_name, count(*) as jml FROM ctc_twitter2019 GROUP BY screen_name ORDER BY jml DESC;";
+    $sql = "SELECT name, screen_name, count(id) as jml FROM ctc_twitter2019 GROUP BY screen_name ORDER BY jml DESC;";
 	
-
     $retval = $conn->query($sql);
 	$totaldata = $retval->num_rows;
 	

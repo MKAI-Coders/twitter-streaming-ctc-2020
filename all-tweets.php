@@ -42,7 +42,7 @@ th {
 	{
 		 echo "<p><h2>Pemantauan Twitter</p></h2>";
 		
-		 echo "<p><h3>Keyword : #awalidengankebersihan, #cleanthecity, #cleanthecity2019 </p></h3>";
+		 echo "<p><h3>Keyword : #awalidengankebersihan, #cleanthecity, #cleanthecity2020 </p></h3>";
 		 echo "<b> All tweets</b></br>";
 		 echo ("Jumlah tweet sampai saat ini (sejak 29/12/2017) : ".$totaldata."</br>");
 
