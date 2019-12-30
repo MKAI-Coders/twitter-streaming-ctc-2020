@@ -90,7 +90,7 @@ th {
 	echo "<br>";
 	echo "<br>";
 	
-	$sql = "SELECT name, screen_name, count(*) as jml FROM tweet_capture GROUP BY screen_name ORDER BY jml DESC limit 10;";
+	$sql = "SELECT name, screen_name, count(id) as jml FROM tweet_capture GROUP BY screen_name ORDER BY jml DESC limit 10;";
 	
 	//$sql = 'SELECT * FROM new_user ORDER BY tanggal DESC LIMIT 3';
 
