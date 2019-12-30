@@ -50,11 +50,11 @@ th {
 		 echo "<img src='img/AjakanCTC.png' alt='Clean The City 2019' width='400' height='100'>";
 		 
 		 //echo "<p><h1>Real Time Monitoring Kegiatan Clean The City 2019</p></h1>";
-		 echo "<p><h1>Real-Time Tweet Streaming</p></h1>";
+		 echo "<p><h1>Pemantauan Twitter</p></h1>";
 		
-		 echo "<p>Keyword : #awalidengankebersihan, #cleanthecity, #cleanthecity2019 </p>";
+		 echo "<p>Keyword : #awalidengankebersihan, #cleanthecity, #cleanthecity2020 </p>";
 		 echo "<b> 10 tweet terupdate </b></br>";
-		 echo ("Jumlah tweet sampai saat ini (sejak 23/12/2018) : ".$totaldata."</br>");
+		 echo ("Jumlah tweet sampai saat ini (sejak 30/12/2019) : ".$totaldata."</br>");
 
 		 //echo "</br></br><table><tr><th>No</th><th>Created<th>ID name</th><th>Status count</th><th>Following</th><th>Follower</th><th>Text</th><th>Location</th></tr>";
 		 echo "</br></br><table><tr><th>No</th><th>Posted<th>ID name</th><th>Text</th><th>Location</th></tr>";
@@ -86,7 +86,7 @@ th {
 		 }
 		 echo "</table>";
 	}
-	echo "<p>Ingin melihat semua tweets? Silahkan klik link ini <a href=http://cyber.khuddam.id/cleanthecity2019/all-tweets.php>semua tweet</a></p>";
+	echo "<p>Ingin melihat semua tweets? Silahkan klik link ini <a href='all-tweets.php'>semua tweet</a></p>";
 	echo "<br>";
 	echo "<br>";
 	
@@ -117,7 +117,7 @@ th {
 		 }
 		 echo "</table>";
 	} 
-	echo "<p>Ingin melihat semua akun? Silahkan klik link ini <a href=http://cyber.khuddam.id/cleanthecity2019/rank.php>semua akun</a></p>";
+	echo "<p>Ingin melihat semua akun? Silahkan klik link ini <a href='rank.php'>semua akun</a></p>";
 	echo "</br>";
 	echo "</br><hr>";
 	echo "<img src='img/LOGO-MKAI.png' alt='MKAI' width='200' height='50'>";

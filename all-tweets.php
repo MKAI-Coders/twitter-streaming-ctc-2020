@@ -26,25 +26,21 @@ th {
 		$strcollect = $strcollect." ".$item;
 	}
 
-    $conn = mysql_connect("128.199.163.242","admin_nasir","@kun4$!r");
+	include 'koneksi.php';
+	
+	$conn = open_db();
+   
+    $sql = "SELECT * FROM tweet_capture ORDER BY id DESC";
 
-	if(! $conn ) {
-      die('Could not connect: ' . mysql_error());
-	}
-   
-    $sql = "SELECT * FROM ctc_twitter2019 ORDER BY id DESC";
-	//$sql = 'SELECT * FROM new_user ORDER BY tanggal DESC LIMIT 3';
-    mysql_select_db('admin_default');
-   
-    $retvaljml = mysql_query( $sql, $conn );
-	$totaldata = mysql_num_rows($retvaljml);
+    $retvaljml = $conn->query($sql);
+	$totaldata = $retvaljml->num_rows;
 	
-	$sql2 = "SELECT * FROM ctc_twitter2019 ORDER BY id DESC";
-	$retval = mysql_query( $sql2, $conn );
+	$sql2 = "SELECT * FROM tweet_capture ORDER BY id DESC";
+	$retval = $conn->query($sql2);
 	
-	if (mysql_num_rows($retval) > 0)
+	if ($retval->num_rows > 0)
 	{
-		 echo "<p><h2>Real-Time Tweet Streaming</p></h2>";
+		 echo "<p><h2>Pemantauan Twitter</p></h2>";
 		
 		 echo "<p><h3>Keyword : #awalidengankebersihan, #cleanthecity, #cleanthecity2019 </p></h3>";
 		 echo "<b> All tweets</b></br>";
@@ -52,7 +48,7 @@ th {
 
 		 echo "</br></br><table><tr><th>No</th><th>Created<th>ID name</th><th>Status count</th><th>Following</th><th>Follower</th><th>Text</th><th>Location</th></tr>";
 		 $i = 1;
-		 while($row = mysql_fetch_array($retval)) 
+		 while($row = $retval->fetch_array(MYSQLI_ASSOC)) 
 		 {
 			 echo "<tr><td>" .$i. "</td>";
 			 echo "<td>" .$row['created_at']. "</td>";
